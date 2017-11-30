@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+.app-root,
+.t3d-scene {
+    overflow: hidden;
+}
+
+.app-root,
+.t3d-scene,
+.t3d-scene > canvas {
+    width: 100%;
+    height: 100%;
+}

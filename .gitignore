@@ -1,0 +1,4 @@
+node_modules
+public/app.js
+public/vendor.js
+public/vendor.js.map

@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "module": "amd",
+        "strict": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "pretty": true,
+        "jsx": "react"
+    },
+    
+    "paths": {
+        "*": [
+            "*"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

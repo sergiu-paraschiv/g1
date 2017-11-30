@@ -1,0 +1,32 @@
+{
+  "name": "g1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc --outFile public/index.js",
+    "dev:serve": "http-server -a localhost -p 8080 -s ./public",
+    "dev:build": "tsc --project tsconfig.dev.json --outFile public/app.js --watch true",
+    "dev:vendor": "r.js -o vendor.js generateSourceMaps=true",
+    "dev": "parallelshell 'npm run dev:vendor' 'npm run dev:build' 'npm run dev:serve'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "parallelshell": "^3.0.2",
+    "requirejs": "^2.3.5",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "@types/classnames": "^2.2.3",
+    "@types/lodash": "^4.14.86",
+    "@types/react": "^16.0.25",
+    "@types/react-dom": "^16.0.3",
+    "@types/three": "^0.84.33",
+    "classnames": "^2.2.5",
+    "lodash-amd": "^4.17.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "three": "^0.88.0"
+  }
+}
